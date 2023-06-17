@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Curiosity AI",
+  "version": "1.0",
+  "description": "Don't know about something or you just want to learn more about something you came across in an article? Just highlight the text and let Curiosity AI tell you more. One click only: no new tabs, no copy pasting, no work.",
+  "icon": "icon.png",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
